@@ -44,3 +44,9 @@ class ListsController < ApplicationController
    params.require(:list).permit(:title, :body, :image)
   end
 end
+# まとめ
+# redirect_toはアクションを実行する
+# renderはアクションを実行しない
+# ビューは自身が呼び出されたアクション内からインスタンス変数を参照する
+#  renderを使う際、ビューの表示に必要なインスタンス変数を用意しなくてはならない
+# renderの性質を利用してエラーメッセージを表示することができる
